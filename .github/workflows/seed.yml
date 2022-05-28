@@ -1,0 +1,36 @@
+# This is a basic workflow to help you get started with Actions
+
+name: desctructive seed
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-20.04.4 LTS
+ 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: seed
+        run: hello. this is the seed. if you found a seed in request folder. type this: 92945-8474-38475-335.
+
+      # Runs a set of commands using the runners shell
+      - name: multi-seed
+        run: if you found a multi-seed in new/code writer, type this: 6732323562352763623623726732y2372387283728738273-58757562437475879755634532-348348473874u3-347983748734
+          echo Add other actions to build,
+          echo test, and deploy your project.
